@@ -1,2 +1,2 @@
 # Python_Projects
-This repository my work on various python project that I made during internships or courses
+This repository contains my work on various python projects that I made or will make during internships or courses.
