@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser
-from django.contrib.auth.models import PermissionMixin
+from django.contrib.auth.models import PermissionsMixin
 from django.contrib.auth.models import BaseUserManager
 
 class UserProfileManager(object):
@@ -22,7 +22,7 @@ class UserProfileManager(object):
 		user.is_staff = True
 		user.save(using=self._db)	
 		
-class UserProfile(AbstractBaseUser, PermissionMixin):
+class UserProfile(AbstractBaseUser, PermissionsMixin):
 
 	"""docstring for UserProfile"""
 	email = models.EmailField(max_length=255, unique=True)
